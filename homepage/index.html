@@ -29,7 +29,7 @@
 
     <!-- Home Section first part of website-->
 
-    <section class="home" id="home">
+    <section class="home autoShow" id="home">
         <div class="hero-wrapper">
             <div class="content ">
                 <h1>Discover my World of Music</h1>
@@ -47,32 +47,133 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about autoShow" id="about">
-    <img src="src/about_img.png" alt="Music illustration" class="about-img reveal">
-    <div class="about-content">
-        <h2>About</h2>
-        <p>
-            Chickenoodle Music is my music space for showcasing new songs, curated playlists, 
-            and everything about my favorite genres. We celebrate music from around the world 
-            and help you find your next favorite track.
-        </p>
+ 
+   <!-- About Section -->
+<section class="about autoShow" id="about">
+  <img src="src/about_img.png" alt="Music illustration" class="about-img reveal">
+  <div class="about-content">
+    <h2 class="reveal">About</h2>
+    <p class="reveal">
+      Chickenoodle Music is my personal space for sharing the songs and playlists I enjoy the most.  
+      It’s not about producing or creating music — it’s about celebrating the tracks that make my life 
+      brighter and sharing them with others who feel the same way.  
+    </p>
+    <p class="reveal">
+      I love music because it has the power to change moods, spark memories, and create new 
+      experiences. Whether it’s relaxing with calm tunes, finding energy in upbeat tracks, or 
+      discovering sounds from around the world, music has always been a way for me to connect 
+      with emotions and people.  
+    </p>
+    <p class="reveal">
+      Here, you’ll find curated playlists, highlights of favorite genres, and recommendations 
+      meant to inspire your own listening journey. Hopefully, you’ll discover your next favorite 
+      song here too!  
+    </p>
+  </div>
+</section>
+
+
+
+   <section class="gallery" id="gallery">
+    <video autoplay muted loop class="section-video">
+        <source src="src/section_background.mp4" type="video/mp4">
+    </video>
+
+    <div class="gallery-content fadeIn">
+        <h2>Song Gallery</h2>
+        <div class="gallery-images">
+            <div class="gallery-item">
+                <img src="src/the II.png" alt="Music Gallery Image 1">
+                <div class="overlay">
+                    <h3>Di Nakakasawa</h3>
+                    <p>Artist: Arthur Nery</p>
+                    <p>Album: The Second</p>
+                    <audio controls>
+                        <source src="src/audio_snippet1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="src/silakbo.png" alt="Music Gallery Image 2">
+                <div class="overlay">
+                    <h3>Multo</h3>
+                    <p>Artist: Cup of Joe</p>
+                    <p>Album: Silakbo</p>
+                    <audio controls>
+                        <source src="src/audio_snippet2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="src/sos.png" alt="Music Gallery Image 3">
+                <div class="overlay">
+                    <h3>Open Arms</h3>
+                    <p>Artist: SZA</p>
+                    <p>Album: SOS</p>
+                    <audio controls>
+                        <source src="src/audio_snippet3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="src/sos.png" alt="Music Gallery Image 3">
+                <div class="overlay">
+                    <h3>Open Arms</h3>
+                    <p>Artist: SZA</p>
+                    <p>Album: SOS</p>
+                    <audio controls>
+                        <source src="src/audio_snippet3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="src/sos.png" alt="Music Gallery Image 3">
+                <div class="overlay">
+                    <h3>Open Arms</h3>
+                    <p>Artist: SZA</p>
+                    <p>Album: SOS</p>
+                    <audio controls>
+                        <source src="src/audio_snippet3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="src/sos.png" alt="Music Gallery Image 3">
+                <div class="overlay">
+                    <h3>Open Arms</h3>
+                    <p>Artist: SZA</p>
+                    <p>Album: SOS</p>
+                    <audio controls>
+                        <source src="src/audio_snippet3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
 
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-images">
-            <img src="src/music1.jpg" alt="Music Gallery Image 1">
-            <img src="src/music2.jpg" alt="Music Gallery Image 2">
-            <img src="src/music3.jpg" alt="Music Gallery Image 3">
-        </div>
-    </section>
 
-    <!-- Playlist Section -->
-    <section class="playlist" id="playlist">
+<!-- Playlist Section -->
+<section class="playlist" id="playlist">
+    <video autoplay muted loop class="section-video">
+        <source src="src/section_background.mp4" type="video/mp4">
+      
+    </video>
+
+    <div class="playlist-content fadeIn">
         <h2>Featured Playlist</h2>
         <p>Check out our top picks this week! Discover trending songs and timeless classics.</p>
         <div class="playlist-tracks">
@@ -83,7 +184,9 @@
                 <li>"Song Title 4" – Artist 4</li>
             </ul>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
