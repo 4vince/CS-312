@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
   <!-- Header Section navigations, logo and website name-->
     <header>
         <div class="logo-container">
@@ -27,9 +28,13 @@
         </div>
     </header>
 
-    <!-- Home Section first part of website-->
 
+<!-- Home Section first part of website-->
     <section class="home autoShow" id="home">
+      <video autoplay muted loop id="bg-video">
+    <source src="src/section_background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
         <div class="hero-wrapper">
             <div class="content ">
                 <h1>Discover my World of Music</h1>
@@ -48,7 +53,7 @@
     </section>
 
  
-   <!-- About Section -->
+<!-- About Section -->
 <section class="about autoShow" id="about">
   <img src="src/about_img.png" alt="Music illustration" class="about-img reveal">
   <div class="about-content">
@@ -75,12 +80,8 @@
 </section>
 
 
-
+<!-- Gallery Section -->
    <section class="gallery" id="gallery">
-    <video autoplay muted loop class="section-video">
-        <source src="src/section_background.mp4" type="video/mp4">
-    </video>
-
     <div class="gallery-content fadeIn">
         <h2>Song Gallery</h2>
           <p class="section-intro">Explore a curated selection of my favorite songs from my favorite artists. Click on any track to listen and discover more!</p>
@@ -174,11 +175,11 @@
 </section>
 
 
-
 <!-- Playlist Section -->
 <section class="playlists" id="playlists">
+
   <h2>My Playlists</h2>
-   <p class="section-intro">Here are my go-to playlists fit for different moods and vibes. Dive into my specially curated playlists and find your next go-to track here!</p>
+   <p class="section-intro">Here are my go-to playlists fit for different moods and vibes. Dive into my specially curated playlists and find your next go-to playlist here!</p>
   <div class="playlist-grid">
 
     <!-- Playlist all time fav -->
@@ -237,8 +238,6 @@
     </div>
   </div>
 </section>
-
-
 
 
     <!-- Contact Section -->

@@ -14,6 +14,17 @@ section {
   padding: 100px 5%; 
 }
 
+#bg-video {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;       
+    opacity: 0.6;      
+}
+
 body, section.home, section.about, section.gallery, section.playlist, section.contact {
     background-color: #141414;
     color: #e0e0e0;
@@ -313,29 +324,6 @@ header .logo-container .Chickenoodle {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* Gallery & Playlist Sections 
-could be removed later */
-.gallery, .playlist {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    padding: 4rem 5%; 
-    color: white;
-}
-
-/* Video background 
-could be removed later*/
-.section-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
 }
 
 .section-intro {
