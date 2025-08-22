@@ -11,7 +11,7 @@ html{
 
 section {
   scroll-margin-top: 80px; 
-  padding: 100px 5%; /* reduced side padding to maximize space */
+  padding: 100px 5%; 
 }
 
 body, section.home, section.about, section.gallery, section.playlist, section.contact {
@@ -100,7 +100,7 @@ header .logo-container .Chickenoodle {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding-top: 10px; /* reduced from 30px */
+    padding-top: 10px; 
 }
 
 
@@ -111,7 +111,7 @@ header .logo-container .Chickenoodle {
     justify-content: space-between;
     gap: 50px;
     flex-wrap: nowrap;
-    max-width: 100%; /* full width */
+    max-width: 100%; 
     margin: 0 auto;
 }
 
@@ -249,12 +249,11 @@ header .logo-container .Chickenoodle {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem; /* increased from 3rem */
+  gap: 5rem; 
   padding: 6rem 12%;
   background-color: #141414;
   color: #f5f5f5;
 }
-
 
 .about-img {
     max-width: 350px;
@@ -273,9 +272,12 @@ header .logo-container .Chickenoodle {
 }
 
 .about h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    color: #f24139;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     margin-bottom: 1.5rem;
-    color: #ffffff;
 }
 
 .about p {
@@ -313,17 +315,19 @@ header .logo-container .Chickenoodle {
     }
 }
 
-/* Gallery & Playlist Sections */
+/* Gallery & Playlist Sections 
+could be removed later */
 .gallery, .playlist {
     position: relative;
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    padding: 4rem 5%; /* reduced side padding */
+    padding: 4rem 5%; 
     color: white;
 }
 
-/* Video background */
+/* Video background 
+could be removed later*/
 .section-video {
     position: absolute;
     top: 0;
@@ -334,16 +338,24 @@ header .logo-container .Chickenoodle {
     z-index: -1;
 }
 
-/* Content above video */
+
 .gallery-content, .playlist-content {
     position: relative;
     z-index: 1;
-    max-width: 95%; /* almost full width */
+    max-width: 95%; 
     margin: 0 auto;
     text-align: center;
 }
 
-/* Fade-in animation */
+.gallery-content h2{
+    font-size: 2rem;
+    color: #f24139;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
 .fadeIn {
     opacity: 0;
     transform: translateY(30px);
@@ -358,7 +370,6 @@ header .logo-container .Chickenoodle {
     }
 }
 
-/* Gallery layout: 3x3 */
 .gallery-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -366,7 +377,6 @@ header .logo-container .Chickenoodle {
     margin-top: 2rem;
 }
 
-/* Gallery item hover */
 .gallery-item {
     position: relative;
     width: 100%;
@@ -389,7 +399,7 @@ header .logo-container .Chickenoodle {
     filter: brightness(0.7);
 }
 
-/* Overlay styling */
+/* Overlay effect css */
 .gallery-item .overlay {
     position: absolute;
     bottom: 0;
@@ -429,7 +439,7 @@ header .logo-container .Chickenoodle {
     color: #e0e0e0;
 }
 
-/* Audio snippet */
+/* Audio snippet css*/
 .gallery-item .overlay audio {
     margin-top: 10px;
     width: 90%;
@@ -445,51 +455,125 @@ header .logo-container .Chickenoodle {
     box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
-/* QR code styling */
+/* QR code css */
 .gallery-item .overlay .spotify-qr {
     margin-top: 12px;
-    width: 200px;         /* adjust size */
+    width: 200px;         
     height: auto;
-    border-radius: 8px;   /* slight rounded edges */
+    border-radius: 8px;   
     box-shadow: 0 2px 6px rgba(0,0,0,0.6);
     transition: transform 0.3s ease;
 }
 
 .gallery-item .overlay .spotify-qr:hover {
-    transform: scale(1.1);  /* zoom effect on hover */
+    transform: scale(1.1);  
 }
-
-
-
 
 
 /* Playlist tracks */
-.playlist-tracks ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1.5rem;
+.playlists {
+  padding: 6rem 12%;
+  background-color: #141414;
+  color: #f5f5f5;
+  text-align: center;
 }
 
-.playlist-tracks li {
+.playlists h2 {
+    font-size: 2rem;
+    color: #f24139;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+}
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+}
+
+.playlist-card {
+  background: #1e1e1e;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playlist-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.playlist-card img {
+  width: 100%;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.playlist-card h3 {
+  color: #f24139;
+  margin-bottom: 0.5rem;
+}
+
+.playlist-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #f24139;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.playlist-btn:hover {
+  background: #d6302a;
+}
+
+
+/* Contact footer */
+footer {
+    width: 100%;
+    background-color: #141414;
+    color: #e0e0e0;
+    padding: 1.5rem 5%;   
+    margin-top: 1.5rem;   
+    text-align: center;
+    border-top: 1px solid #f24139; 
+}
+
+footer h2 {
+    font-size: 1.5rem;  
+    color: #f24139;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     margin-bottom: 0.8rem;
-    font-size: 1.1rem;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .gallery-images {
-        grid-template-columns: repeat(2, 1fr);
-    }
+footer p {
+    font-size: 0.9rem;   
+    margin: 0.3rem auto;
+    max-width: 600px;    
 }
 
-@media (max-width: 768px) {
-    .gallery-images {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .gallery-item {
-        width: 90%;
-    }
+footer .footer-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
+
+footer .footer-links a {
+    color: #f24139;
+    text-decoration: none;
+    font-size: 0.9rem;  
+    transition: color 0.3s ease;
+}
+
+
+
+
+
